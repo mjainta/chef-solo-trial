@@ -5,3 +5,10 @@
 ###
 .chef/*.pem
 .chef/encrypted_data_bag_secret
+
+# Stuff that creates when chef is run locally
+chef_guid
+chef-client-running.pid
+chef-stacktrace.out
+local-mode-cache/
+nodes/
