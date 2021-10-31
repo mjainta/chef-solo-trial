@@ -12,10 +12,11 @@
 .chef
 .chef/*.pem
 .chef/encrypted_data_bag_secret
-.local-mode-cache/
+local-mode-cache/
 chef_guid
 chef-client-running.pid
 chef-stacktrace.out
+remote_file/
 
 ## Ignore Chef-Zero files
 clients
