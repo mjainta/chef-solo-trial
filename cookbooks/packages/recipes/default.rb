@@ -78,3 +78,8 @@ archive_file 'golang' do
   destination '/usr/local'
   not_if { File.exists?("/usr/local/go") }
 end
+
+execute 'go-get-ghq' do
+  command '/usr/local/go/bin/go install github.com/x-motemen/ghq@latest'
+  user node['user']['name']
+end
