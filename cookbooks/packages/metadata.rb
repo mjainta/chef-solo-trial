@@ -1,9 +1,9 @@
 name 'packages'
-maintainer 'The Authors'
-maintainer_email 'you@example.com'
-license 'All Rights Reserved'
+maintainer 'mjainta'
+maintainer_email ''
+license 'Apache-2.0'
 description 'Installs/Configures packages'
-version '0.1.0'
+version '1.0.0'
 chef_version '>= 16.0'
 
 # The `issues_url` points to the location where issues for this cookbook are

@@ -1,4 +1,4 @@
-# Packages
+# Example
 
 An example cookbook
 
@@ -14,7 +14,7 @@ _No dependencies defined_
 
 ## Attributes
 
-_None_
+- `node['example']['name']` - Defaults to `Sam Doe`.
 
 ## Recipes
 
@@ -24,4 +24,4 @@ _None_
 
 Maintainer:: (<>)
 
-License:: Apache-2.0
+License:: All rights reserved
