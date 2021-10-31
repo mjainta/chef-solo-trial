@@ -46,3 +46,11 @@ end
 
 execute 'snap install spotify'
 execute 'snap install code'
+
+remote_file '/usr/local/bin/docker-compose' do
+  source "https://github.com/docker/compose/releases/download/1.29.2/docker-compose-#{node['kernel']['name']}-#{node['kernel']['machine']}"
+  owner 'root'
+  group 'root'
+  mode '0755'
+  action :create
+end
