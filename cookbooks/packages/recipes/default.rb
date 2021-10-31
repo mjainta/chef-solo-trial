@@ -19,6 +19,7 @@ packages = [
   'speedcrunch',
   'xtightvncviewer',
   'pulseeffects',
+  'meld',
 ]
 
 snaps = [
