@@ -43,4 +43,5 @@ end
 #   options ['classic']
 # end
 
-execute 'snap install spotify code'
+execute 'snap install spotify'
+execute 'snap install code'
