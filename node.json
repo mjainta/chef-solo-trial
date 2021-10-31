@@ -1,5 +1,5 @@
 { 
-    "run_list": [ "recipe[packages gitconfig]" ],
+    "run_list": [ "recipe[packages]", "recipe[gitconfig]" ],
     "environment": "default",
     "chef_environment": "default"
 }
