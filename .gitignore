@@ -18,6 +18,8 @@ chef-client-running.pid
 chef-stacktrace.out
 remote_file/
 
+environments/default.json
+
 ## Ignore Chef-Zero files
 clients
 nodes

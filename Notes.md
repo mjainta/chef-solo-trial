@@ -12,6 +12,8 @@ Install the chef workstation:
 
 ## Chef commands
 
+First, copy [environments/default.example.json](environments/default.example.json) into [environments/default.json](environments/default.json) and modify the placeholder values.
+
 Run it:
 ```bash
 sudo chef-solo -c solo.rb -j node.json

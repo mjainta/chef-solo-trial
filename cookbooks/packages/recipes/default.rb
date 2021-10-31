@@ -72,3 +72,9 @@ execute 'aws-cli' do
   command '/tmp/aws-cli/aws/install'
   not_if { File.exists?("/usr/local/aws-cli/v2/current/bin/aws") }
 end
+
+archive_file 'golang' do
+  path 'https://golang.org/dl/go1.17.2.linux-amd64.tar.gz'
+  destination '/usr/local'
+  not_if { File.exists?("/usr/local/go") }
+end
