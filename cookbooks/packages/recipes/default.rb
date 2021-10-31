@@ -54,3 +54,21 @@ remote_file '/usr/local/bin/docker-compose' do
   mode '0755'
   action :create
 end
+
+remote_file '/tmp/aws-cli.zip' do
+  source 'https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip'
+  owner 'root'
+  group 'root'
+  mode '0755'
+  action :create
+end
+
+archive_file 'aws-cli' do
+  path '/tmp/aws-cli.zip'
+  destination '/tmp/aws-cli'
+end
+
+execute 'aws-cli' do
+  command '/tmp/aws-cli/aws/install'
+  not_if { File.exists?("/usr/local/aws-cli/v2/current/bin/aws") }
+end
