@@ -26,7 +26,7 @@ Docs for tasks inside cookbooks:
 Docs for Ruby:
 - loops - https://code-maven.com/for-loop-in-ruby
 
-## Chef commans
+## Chef commands
 
 First, copy [environments/default.example.json](environments/default.example.json) into [environments/default.json](environments/default.json) and modify the placeholder values.
 
